@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Graphs</title>
+    <!-- Add any CSS or meta tags here -->
+    <style>
+        .graph-container {
+            height: 600px; /* Adjust the height as needed */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attendance Graphs</h1>
+    
+    <!-- Container for Attendance per Student graph -->
+
+        {{ fig_attendance_per_student|safe }}
+
+    <!-- Container for Students Present per Day graph -->
+    <!-- <div id="students-present-per-day">
+        {{ fig_students_present_per_day|safe }}
+    </div>
+        <div class="graph-container" id="attendance-heatmap">
+        {{ fig_attendance_heatmap|safe }}
+    </div>
+         -->
+    <!-- Include Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</body>
